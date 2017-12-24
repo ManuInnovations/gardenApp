@@ -32,9 +32,7 @@ export default {
       height: '100%',
       opacity: .6,
       zIndex: -1,
-      backgroundColor: theme.colors.canvas,
-      backgroundImage: 'url("https://www.randomdoggiegenerator.com/randomdoggie.php")',
-      backgroundSize: 'cover'
+      backgroundColor: theme.colors.canvas
     }
   }),
   header: ({ theme }) => ({

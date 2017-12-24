@@ -38,34 +38,6 @@ function Home (props) {
             id: 'app.tagline',
             className: styles.taglineText
           })
-        ]),
-        h('div', {
-          className: styles.buttonsContainer
-        }, [
-          h(Link, {
-            to: '/sign-in'
-          }, [
-            h(RaisedButton, {
-              primary: true
-            }, [
-              h(FormattedMessage, {
-                id: 'agents.signIn',
-                className: styles.buttonText
-              })
-            ])
-          ]),
-          h(Link, {
-            to: '/register'
-          }, [
-            h(RaisedButton, {
-              primary: true
-            }, [
-              h(FormattedMessage, {
-                id: 'agents.register',
-                className: styles.buttonText
-              })
-            ])
-          ])
         ])
       ])
     ])
