@@ -4,7 +4,7 @@ import React from 'react'
 // Top Level Containers
 import Home from './app/containers/Home'
 import DogsContainer from './dogs/containers/Dogs'
-import DogContainer from './dogs/containers/Dog'
+import Garden from './garden/containers/Garden'
 
 export default [
   {
@@ -25,6 +25,16 @@ export default [
     navigation: {
       title: 'dogs.dogs',
       icon: 'fa fa-paw'
+    }
+  },
+  {
+    name: 'garden',
+    path: '/garden',
+    exact: true,
+    Component: Garden,
+    navigation: {
+      title: 'garden.garden',
+      icon: 'fa fa-leaf'
     }
   }
 ]
