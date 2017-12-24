@@ -1,7 +1,7 @@
 {
-  "name": "dogstack-example-dogs",
+  "name": "gardenApp",
   "version": "1.0.0",
-  "description": "example dogstack full-stack app",
+  "description": "gardenApp in dogstack",
   "scripts": {
     "start": "dog server",
     "dev": "dog dev server",
@@ -12,7 +12,7 @@
     "burnthemall": "rm -rf package-lock.json node_modules; npm i",
     "burnthedb": "rm db/dev.sqlite; dog db migrate:latest; dog db seed:run"
   },
-  "author": "iainkirkpatrick",
+  "author": "MH",
   "license": "ISC",
   "browserify": {
     "transform": [
