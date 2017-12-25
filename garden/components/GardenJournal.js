@@ -17,7 +17,7 @@ const GardenJournal = (props) => {
   return (
     h('div', {
       className: styles.container
-    }, [
+    }), [
       h('h1', {}, [
         h(FormattedMessage, {
           id: 'journal.myJournal'
@@ -25,10 +25,13 @@ const GardenJournal = (props) => {
       ]),
       h('div', {}, [
         mapJournalToValues(garden)
-      ])
+      ]),
+      h('button', {
+        onClick: createEntry
+      },
     ])
   )
-}
+)}
 
 export default compose(
   connectStyles(styles)
