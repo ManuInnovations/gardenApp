@@ -1,16 +1,16 @@
-import h from 'react-hyperscript'
-import React from 'react'
+import { connect } from 'feathers-action-react'
 
 import GardenJournal from '../components/GardenJournal'
-import GardenToDo from '../components/GardenToDo'
 
-const Garden = (props) => {
-  return (
-    <div>
-      <GardenJournal />
-      <GardenToDo />
-    </div>
-  )
-}
+import { actions as gardenActions } from '../'
 
-export default Garden
+import { getIndexProps } from '../getters'
+
+export default connect({
+  selector: getIndexProps,
+  actions: { journal: gardenActions },
+  query: {
+    service: 'journal',
+    params: {}
+  }
+})(GardenJournal)

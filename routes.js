@@ -5,6 +5,7 @@ import React from 'react'
 import Home from './app/containers/Home'
 import DogsContainer from './dogs/containers/Dogs'
 import Garden from './garden/containers/Garden'
+import GardenJournal from './garden/components/GardenJournal'
 
 export default [
   {
@@ -34,6 +35,16 @@ export default [
     Component: Garden,
     navigation: {
       title: 'garden.garden',
+      icon: 'fa fa-leaf'
+    }
+  },
+  {
+    name: 'gardenJournal',
+    path: '/journal',
+    exact: true,
+    Component: GardenJournal,
+    navigation: {
+      title: 'journal.myJournal',
       icon: 'fa fa-leaf'
     }
   }
