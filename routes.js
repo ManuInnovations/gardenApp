@@ -3,9 +3,9 @@ import React from 'react'
 
 // Top Level Containers
 import Home from './app/containers/Home'
-import DogsContainer from './dogs/containers/Dogs'
-import Garden from './garden/containers/Garden'
-import GardenJournal from './garden/components/GardenJournal'
+// import Garden from './garden/containers/GardenJournal'
+import Profile from './garden/components/GardenProfile'
+import Journal from './garden/components/GardenJournal'
 
 export default [
   {
@@ -19,22 +19,12 @@ export default [
     }
   },
   {
-    name: 'dogs',
-    path: '/',
-    exact: true,
-    Component: (DogsContainer),
-    navigation: {
-      title: 'dogs.dogs',
-      icon: 'fa fa-paw'
-    }
-  },
-  {
     name: 'garden',
-    path: '/garden',
+    path: '/profile',
     exact: true,
-    Component: Garden,
+    Component: Profile,
     navigation: {
-      title: 'garden.garden',
+      title: 'garden.profile',
       icon: 'fa fa-leaf'
     }
   },
@@ -42,7 +32,7 @@ export default [
     name: 'gardenJournal',
     path: '/journal',
     exact: true,
-    Component: GardenJournal,
+    Component: Journal,
     navigation: {
       title: 'journal.myJournal',
       icon: 'fa fa-leaf'

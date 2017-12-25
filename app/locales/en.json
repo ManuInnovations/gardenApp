@@ -3,12 +3,7 @@
   "app.tagline": "Record and share your garden's journey.",
   "app.closeMenu": "close menu",
   "app.home": "home",
-  "agents.welcome": "hey, welcome to dogstack!",
-  "dogs.dogs": "dogs",
-  "dogs.myDogs": "my dogs",
-  "dogs.adoptDog": "adopt a dog!",
-  "dogs.giveDog": "give a dog to a friend!",
-  "garden.garden": "Let's journal your garden!",
-  "journal.myJournal": "Here is where you can read all your journal entries",
-  "journal.journal": "One day you will be able to add things too"
+  "garden.garden": "Profile",
+  "garden.profile": "Garden Profile",
+  "journal.myJournal": "Journal"
 }
