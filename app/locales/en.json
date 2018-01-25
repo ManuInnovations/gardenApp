@@ -6,5 +6,6 @@
   "garden.garden": "Profile",
   "garden.profile": "Garden Profile",
   "journal.myJournal": "Journal",
+  "journal.newEntry": "Add a new entry",
   "garden.toDoList": "Garden To Do List"
 }

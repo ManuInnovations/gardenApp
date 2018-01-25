@@ -3,9 +3,9 @@ import React from 'react'
 
 // Top Level Containers
 import Home from './app/containers/Home'
-// import Garden from './garden/containers/GardenJournal'
+import GardenJournal from './garden/containers/GardenJournal'
 import Profile from './garden/components/GardenProfile'
-import Journal from './garden/components/GardenJournal'
+// import Journal from './garden/components/GardenJournal'
 
 export default [
   {
@@ -32,7 +32,7 @@ export default [
     name: 'gardenJournal',
     path: '/journal',
     exact: true,
-    Component: Journal,
+    Component: GardenJournal,
     navigation: {
       title: 'journal.myJournal',
       icon: 'fa fa-leaf'

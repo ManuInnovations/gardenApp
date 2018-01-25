@@ -1,6 +1,6 @@
 import createModule from 'feathers-action'
 
-const module = createModule('garden')
+const module = createModule('journal')
 
 export const actions = module.actions
 export const updater = module.updater

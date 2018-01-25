@@ -3,35 +3,37 @@ import { mapObjIndexed, values, keys, pipe, prop } from 'ramda'
 import { FormattedMessage } from 'dogstack/intl'
 import { connect as connectStyles } from 'react-fela'
 import { compose } from 'recompose'
+import React from 'react'
 
 import styles from '../styles/GardenJournal'
 
 const mapJournalEntries = mapObjIndexed((entry, key) => (
-  h('p', {}, prop('entry', entry))
+ h('p', {}, prop('entry', entry))
 ))
+
 const mapJournalToValues = pipe(mapJournalEntries, values)
 
 const GardenJournal = (props) => {
-  const { garden, styles } = props
-
+  const { journal, styles } = props
   return (
-    h('div', {
-      className: styles.container
-    }), [
-      h('h1', {}, [
-        h(FormattedMessage, {
-          id: 'journal.myJournal'
-        })
-      ]),
+    h('div', {}, [
       h('div', {}, [
-        mapJournalToValues(garden)
+        mapJournalToValues(journal)
       ]),
       h('button', {
-        onClick: createEntry
-      },
+        onClick: createJournalEntry
+      }, [
+        h(FormattedMessage, {
+          id: 'journal.newEntry'
+        })
+      ]
+      )
     ])
   )
-)}
+  function createJournalEntry (){
+    console.log('heelo')
+  }
+}
 
 export default compose(
   connectStyles(styles)

@@ -2,13 +2,13 @@ import { connect } from 'feathers-action-react'
 
 import GardenJournal from '../components/GardenJournal'
 
-import { actions as gardenActions } from '../'
+import { actions as journalActions } from '../'
 
 import { getIndexProps } from '../getters'
 
 export default connect({
   selector: getIndexProps,
-  actions: { journal: gardenActions },
+  actions: { journal: journalActions },
   query: {
     service: 'journal',
     params: {}
